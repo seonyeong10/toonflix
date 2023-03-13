@@ -1,11 +1,26 @@
 import 'package:flutter/material.dart';
-import 'screen/home_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const App());
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'SCDream',
+      ),
+      themeMode: ThemeMode.system,
+      home: const HomeScreen(),
+    );
+  }
+}
+
+/* class App extends StatelessWidget {
   const App({super.key});
 
   @override
@@ -25,4 +40,4 @@ class App extends StatelessWidget {
       home: const HomeScreen(),
     );
   }
-}
+} */
