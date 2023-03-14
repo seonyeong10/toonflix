@@ -15,7 +15,7 @@ class App extends StatelessWidget {
         fontFamily: 'SCDream',
       ),
       themeMode: ThemeMode.system,
-      home: const HomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
