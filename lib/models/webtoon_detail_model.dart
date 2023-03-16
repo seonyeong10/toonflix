@@ -3,7 +3,7 @@ class WebtoonDetailModel {
 
   WebtoonDetailModel.fromJson(Map<String, dynamic> json)
       : title = json['title'],
-        about = json['json'],
+        about = json['about'],
         genre = json['genre'],
         age = json['age'];
 }
